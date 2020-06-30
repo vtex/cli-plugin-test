@@ -1,0 +1,63 @@
+{
+  "name": "cli-plugin-test",
+  "version": "0.0.0",
+  "author": "VTEX",
+  "bugs": "https://github.com/vtex/cli-plugin-test/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@types/react": "^16.9.41",
+    "@vtex/api": "^6.33.0",
+    "eslint": "^7.3.1",
+    "eslint-config-vtex": "^12.6.0",
+    "ink": "^2.7.1",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/plugin-help": "^3",
+    "@types/node": "^10",
+    "globby": "^10",
+    "ts-node": "^8",
+    "typescript": "^3.3",
+    "vtex": "2.103.1-beta"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/build",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/yarn.lock"
+  ],
+  "homepage": "https://github.com/vtex/cli-plugin-test",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./build/commands",
+    "bin": "oclif-example",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "vtex/cli-plugin-test",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "rm -rf build && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md",
+    "format": "prettier --config ./.prettierrc --write \"./src/**/*.{ts,tsx,js,jsx,json}\"",
+    "lint:node": "yarn eslint ./src --cache --ext ts --config .eslintrc",
+    "format-lint": "yarn format && yarn lint:node",
+    "build-clean": "rm -rf build",
+    "build-incremental": "yarn tsc --incremental && bash ./scripts/symlinkPlugin.sh && OCLIF_COMPILATION=true yarn oclif-dev manifest",
+    "build": "yarn build-clean && yarn tsc && OCLIF_COMPILATION=true yarn oclif-dev manifest",
+    "ci:test": "yarn test --ci",
+    "ci:prettier-check": "prettier --check --config ./.prettierrc \"./src/**/*.{ts,tsx,js,jsx,json}\""
+  }
+}
