@@ -3,6 +3,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "importHelpers": true,
+    "jsx": "react",
     "lib": ["es2018"],
     "module": "commonjs",
     "noImplicitAny": false,
