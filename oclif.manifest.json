@@ -1,1 +1,32 @@
-{"version":"0.0.0","commands":{"test:e2e":{"id":"test:e2e","description":"Run your VTEX app's integration tests","pluginName":"cli-plugin-test","pluginType":"core","aliases":[],"examples":[],"flags":{"verbose":{"name":"verbose","type":"boolean","char":"v","description":"Show debug level logs","allowNo":false},"help":{"name":"help","type":"boolean","char":"h","description":"show CLI help","allowNo":false},"trace":{"name":"trace","type":"boolean","description":"Ensure all requests to VTEX IO are traced","allowNo":false},"report":{"name":"report","type":"option","char":"r","description":"Check the results and state of a previously started test given its ID"},"workspace":{"name":"workspace","type":"boolean","char":"w","description":"Test workspace's apps","allowNo":false},"token":{"name":"token","type":"boolean","char":"t","description":"[Not recommended] Send your personal authorization token to your test session so it's available while running the tests. It can be dangerous because exposes the token via 'authToken' environment variable","allowNo":false}},"args":[]},"test:unit":{"id":"test:unit","description":"Run your VTEX app unit tests","pluginName":"cli-plugin-test","pluginType":"core","aliases":["test"],"examples":[],"flags":{"verbose":{"name":"verbose","type":"boolean","char":"v","description":"Show debug level logs","allowNo":false},"help":{"name":"help","type":"boolean","char":"h","description":"show CLI help","allowNo":false},"trace":{"name":"trace","type":"boolean","description":"Ensure all requests to VTEX IO are traced","allowNo":false},"unsafe":{"name":"unsafe","type":"boolean","char":"u","description":"Allow tests with Typescript errors","allowNo":false}},"args":[]}}}
+{
+  "version": "0.0.0",
+  "commands": {
+    "hello": {
+      "id": "hello",
+      "description": "describe the command here",
+      "pluginName": "cli-plugin-template",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": ["$ oclif-example hello\nhello world from ./src/hello.ts!\n"],
+      "flags": {
+        "verbose": {
+          "name": "verbose",
+          "type": "boolean",
+          "char": "v",
+          "description": "Show debug level logs",
+          "allowNo": false
+        },
+        "help": { "name": "help", "type": "boolean", "char": "h", "description": "show CLI help", "allowNo": false },
+        "trace": {
+          "name": "trace",
+          "type": "boolean",
+          "description": "Ensure all requests to VTEX IO are traced",
+          "allowNo": false
+        },
+        "name": { "name": "name", "type": "option", "char": "n", "description": "name to print" },
+        "force": { "name": "force", "type": "boolean", "char": "f", "allowNo": false }
+      },
+      "args": [{ "name": "file" }]
+    }
+  }
+}

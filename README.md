@@ -1,12 +1,12 @@
-@thiagoveras/cli-plugin-test
-============================
+cli-plugin-template
+===================
 
-
+vtex plugin template
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/@thiagoveras/cli-plugin-test.svg)](https://npmjs.org/package/@thiagoveras/cli-plugin-test)
-[![Downloads/week](https://img.shields.io/npm/dw/@thiagoveras/cli-plugin-test.svg)](https://npmjs.org/package/@thiagoveras/cli-plugin-test)
-[![License](https://img.shields.io/npm/l/@thiagoveras/cli-plugin-test.svg)](https://github.com/VerasThiago/cli-plugin-test/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/cli-plugin-template.svg)](https://npmjs.org/package/cli-plugin-template)
+[![Downloads/week](https://img.shields.io/npm/dw/cli-plugin-template.svg)](https://npmjs.org/package/cli-plugin-template)
+[![License](https://img.shields.io/npm/l/cli-plugin-template.svg)](https://github.com/vtex/cli-plugin-template/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -15,11 +15,11 @@
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @thiagoveras/cli-plugin-test
+$ npm install -g cli-plugin-template
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-@thiagoveras/cli-plugin-test/0.0.0 linux-x64 node-v14.0.0
+cli-plugin-template/0.0.0 linux-x64 node-v14.0.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -48,5 +48,5 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/VerasThiago/cli-plugin-test/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [build/commands/hello.ts](https://github.com/vtex/cli-plugin-template/blob/v0.0.0/build/commands/hello.ts)_
 <!-- commandsstop -->
