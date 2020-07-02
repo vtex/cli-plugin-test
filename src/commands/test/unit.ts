@@ -1,7 +1,7 @@
 import { flags as oclifFlags } from '@oclif/command'
 
 import { CustomCommand } from 'vtex'
-import testCommand from '../../modules/e2e/testCommand'
+import testCommand from '../../modules/e2e'
 
 export default class UnitTest extends CustomCommand {
   static description = 'Run your VTEX app unit tests'

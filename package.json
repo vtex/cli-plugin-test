@@ -6,8 +6,6 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "ink": "^2.7.1",
-    "react": "^16.13.1",
     "tslib": "^1"
   },
   "devDependencies": {
