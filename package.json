@@ -1,8 +1,8 @@
 {
-  "name": "cli-plugin-template",
-  "description": "vtex plugin template",
+  "name": "@vtex/cli-plugin-test",
+  "description": "vtex plugin test",
   "version": "0.0.0",
-  "bugs": "https://github.com/vtex/cli-plugin-template/issues",
+  "bugs": "https://github.com/vtex/cli-plugin-test/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -36,7 +36,7 @@
     "/oclif.manifest.json",
     "/yarn.lock"
   ],
-  "homepage": "https://github.com/vtex/cli-plugin-template",
+  "homepage": "https://github.com/vtex/cli-plugin-test",
   "keywords": [
     "oclif-plugin"
   ],
@@ -48,7 +48,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "vtex/cli-plugin-template",
+  "repository": "vtex/cli-plugin-test",
   "scripts": {
     "build-clean": "rm -rf build",
     "build-incremental": "tsc --incremental",
