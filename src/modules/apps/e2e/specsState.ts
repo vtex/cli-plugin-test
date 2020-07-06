@@ -1,4 +1,4 @@
-import { SpecReport, AppReport, TestReport } from 'vtex'
+import { SpecReport, AppReport, TestReport } from '../../../clients/Tester'
 
 const COMPLETED_STATES = ['passed', 'failed', 'skipped', 'error']
 

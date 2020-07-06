@@ -2,7 +2,6 @@ import chalk from 'chalk'
 
 import {
   createAppsClient,
-  Tester,
   TestRequest,
   AppReport,
   ManifestEditor,
@@ -14,6 +13,8 @@ import {
 } from 'vtex'
 
 import { parseReport, AppTest, passedApp } from './specsState'
+
+import { Tester } from '../../../clients/Tester'
 
 const POLL_INTERVAL = 2000
 
