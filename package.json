@@ -1,11 +1,14 @@
 {
-  "name": "cli-plugin-template",
-  "description": "vtex plugin template",
+  "name": "@vtex/cli-plugin-test",
+  "description": "vtex plugin test",
   "version": "0.0.0",
-  "bugs": "https://github.com/vtex/cli-plugin-template/issues",
+  "bugs": "https://github.com/vtex/cli-plugin-test/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
+    "@tiagonapoli/oclif-plugin-spaced-commands": "^0.0.6",
+    "async-retry": "^1.3.1",
+    "chalk": "^4.1.0",
     "tslib": "^1"
   },
   "devDependencies": {
@@ -23,7 +26,7 @@
     "nodemon-notifier-cli": "https://github.com/Slessi/nodemon-notifier-cli.git",
     "prettier": "^2.0.1",
     "ts-jest": "^25.2.1",
-    "ts-node": "^8",
+    "ts-node": "^8.10.2",
     "typescript": "^3.8.2",
     "vtex": "^2.103.1-beta"
   },
@@ -36,7 +39,7 @@
     "/oclif.manifest.json",
     "/yarn.lock"
   ],
-  "homepage": "https://github.com/vtex/cli-plugin-template",
+  "homepage": "https://github.com/vtex/cli-plugin-test",
   "keywords": [
     "oclif-plugin"
   ],
@@ -44,11 +47,19 @@
   "oclif": {
     "commands": "./build/commands",
     "bin": "oclif-example",
+    "plugins": [
+      "@tiagonapoli/oclif-plugin-spaced-commands"
+    ],
     "devPlugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "topics": {
+      "test": {
+        "description": "Test commands. Run 'vtex test' to see all subcommands"
+      }
+    }
   },
-  "repository": "vtex/cli-plugin-template",
+  "repository": "vtex/cli-plugin-test",
   "scripts": {
     "build-clean": "rm -rf build",
     "build-incremental": "tsc --incremental",
@@ -60,7 +71,7 @@
     "lint": "eslint ./src --cache --ext .ts --config .eslintrc",
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
-    "prepack": "rm -rf build && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "prepack": "rm -rf build && tsc -b && OCLIF_COMPILATION=true oclif-dev manifest && oclif-dev readme",
     "prepublishOnly": "bash ./scripts/publishLock.sh",
     "test": "jest --passWithNoTests",
     "version": "oclif-dev readme && git add README.md",
