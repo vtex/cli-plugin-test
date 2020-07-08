@@ -10,9 +10,8 @@ import {
   PinnedDeps,
   toAppLocator,
   logger,
+  ManifestEditor,
   getAppRoot,
-  getManifest,
-  writeManifestSchema,
   listenBuild,
   BatchStream,
   runYarnIfPathExists,
@@ -92,10 +91,10 @@ const performTest = async (
 export default async (options) => {
   await validateAppAction('test')
   const unsafe = !!(options.unsafe || options.u)
-  const manifest = await getManifest()
+  const manifest = await ManifestEditor.getManifestEditor()
 
   try {
-    await writeManifestSchema()
+    await manifest.writeSchema()
   } catch (e) {
     logger.debug('Failed to write schema on manifest.')
   }
