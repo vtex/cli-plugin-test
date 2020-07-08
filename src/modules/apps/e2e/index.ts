@@ -2,8 +2,6 @@ import chalk from 'chalk'
 
 import {
   createAppsClient,
-  TestRequest,
-  AppReport,
   ManifestEditor,
   SessionManager,
   parseLocator,
@@ -14,7 +12,7 @@ import {
 
 import { parseReport, AppTest, passedApp } from './specsState'
 
-import { Tester } from '../../../clients/Tester'
+import { Tester, AppReport, TestRequest } from '../../../clients/Tester'
 
 const POLL_INTERVAL = 2000
 
