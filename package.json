@@ -28,7 +28,7 @@
     "ts-jest": "^25.2.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.8.2",
-    "vtex": "^2.103.1-beta"
+    "vtex": "2.105.1-beta.8"
   },
   "engines": {
     "node": ">=8.0.0"

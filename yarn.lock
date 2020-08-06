@@ -1090,6 +1090,38 @@
     tar-fs "^2.0.0"
     xss "^1.0.6"
 
+"@vtex/cli-plugin-edition@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@vtex/cli-plugin-edition/-/cli-plugin-edition-0.0.1.tgz#b0c7f922b9b183fa470ee251f75ae57b94596115"
+  integrity sha512-acSh3lwtOTMZs+qPlMFN+n6ADojl0RmpRAFFuc59JStAsPfMjodUl75P5aFaTw5KfjjI2JvHmaMslaHUMGDbbQ==
+  dependencies:
+    "@oclif/command" "^1"
+    "@oclif/config" "^1"
+    "@tiagonapoli/oclif-plugin-spaced-commands" "^0.0.6"
+    tslib "^1"
+
+"@vtex/cli-plugin-lighthouse@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@vtex/cli-plugin-lighthouse/-/cli-plugin-lighthouse-0.0.3.tgz#cdfcfe4b5c6cb0579f0b4be65d5e94bf0858eb91"
+  integrity sha512-qEp44cMhwsPklg4ue/uHwXJk4ENPuqmZ+s2QK8EikCTbU4Mx0B+VVZfDfpHTrqiKavKSfhXGmXILYMxYo/YPSA==
+  dependencies:
+    "@oclif/command" "^1"
+    "@oclif/config" "^1"
+    "@tiagonapoli/oclif-plugin-spaced-commands" "^0.0.6"
+    tslib "^1"
+
+"@vtex/cli-plugin-test@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@vtex/cli-plugin-test/-/cli-plugin-test-0.0.5.tgz#f1754092dd4e9aad7a1e94d59b0055106210fac7"
+  integrity sha512-o+EXTQYB6qcyfRApnLC23eEPK3gehbbZPI7LtKcvT5jr9jKvxGCoUgW88E4Xujw4XC4f2A11y8sHqVBT69qSSQ==
+  dependencies:
+    "@oclif/command" "^1"
+    "@oclif/config" "^1"
+    "@tiagonapoli/oclif-plugin-spaced-commands" "^0.0.6"
+    async-retry "^1.3.1"
+    chalk "^4.1.0"
+    tslib "^1"
+
 "@vtex/node-error-report@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@vtex/node-error-report/-/node-error-report-0.0.2.tgz#edf15095d6bb543d28b46f86bc109e6214149dfe"
@@ -8323,16 +8355,19 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vtex@^2.103.1-beta:
-  version "2.103.1-beta"
-  resolved "https://registry.yarnpkg.com/vtex/-/vtex-2.103.1-beta.tgz#50e255c444a7862235f3963d75fe60d0d98c9f93"
-  integrity sha512-rr9NlL0G/HBZcbR7380oXZZG5M7tIjOhA5rSYuVoiBY5DdbtteDyfv3CicPnlJPX5tdfgoW8hZhQ4oNs6P4EeA==
+vtex@2.105.1-beta.8:
+  version "2.105.1-beta.8"
+  resolved "https://registry.yarnpkg.com/vtex/-/vtex-2.105.1-beta.8.tgz#43970148cd3aaa3c6669dec3899495debc0aae62"
+  integrity sha512-5E/emxDF93aCBGjP6DS+c/WN+GYdoxr55D+xFinyvFhC/XXb2ZSnJ3HYmjOvt0giufAqW8AnAEgOVN5meEzqYg==
   dependencies:
     "@oclif/command" "^1.0.0"
     "@oclif/config" "^1.0.0"
     "@oclif/plugin-help" "^2.0.0"
     "@tiagonapoli/oclif-plugin-spaced-commands" "^0.0.6"
     "@vtex/api" "3.71.1"
+    "@vtex/cli-plugin-edition" "^0.0.1"
+    "@vtex/cli-plugin-lighthouse" "^0.0.3"
+    "@vtex/cli-plugin-test" "^0.0.5"
     "@vtex/node-error-report" "^0.0.2"
     "@vtex/toolbelt-message-renderer" "^0.0.1"
     "@yarnpkg/lockfile" "^1.1.0"
