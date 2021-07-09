@@ -18,7 +18,7 @@ $ npm install -g @vtex/cli-plugin-test
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-@vtex/cli-plugin-test/0.0.5 linux-x64 node-v12.18.3
+@vtex/cli-plugin-test/0.0.5 linux-x64 node-v12.22.1
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -36,7 +36,7 @@ Run your VTEX app's integration tests
 
 ```
 USAGE
-  $ oclif-example test:e2e
+  $ oclif-example test e2e
 
 OPTIONS
   -h, --help           show CLI help
@@ -61,7 +61,7 @@ Run your VTEX app unit tests
 
 ```
 USAGE
-  $ oclif-example test:unit
+  $ oclif-example test unit
 
 OPTIONS
   -h, --help     show CLI help
