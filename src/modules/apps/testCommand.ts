@@ -1,19 +1,18 @@
 import retry from 'async-retry'
 import chalk from 'chalk'
 import { concat, map, prop } from 'ramda'
+import type { PinnedDeps, BatchStream } from 'vtex'
 import {
   CommandError,
   Builder,
   createPathToFileObject,
   YarnFilesManager,
   fixPinnedDependencies,
-  PinnedDeps,
   toAppLocator,
   logger,
   ManifestEditor,
   getAppRoot,
   listenBuild,
-  BatchStream,
   runYarnIfPathExists,
   listLocalFiles,
   ProjectUploader,
@@ -116,7 +115,7 @@ export default async (options) => {
   map(runYarnIfPathExists, buildersToRunLocalYarn)
 
   const onError = {
-    // eslint-disable-next-line @typescript-eslint/camelcase
+    // eslint-disable-next-line
     build_failed: () => {
       logger.error(`App build failed. Waiting for changes...`)
     },
