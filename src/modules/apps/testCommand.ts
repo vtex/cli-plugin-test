@@ -3,8 +3,8 @@ import chalk from 'chalk'
 import { concat, map, prop } from 'ramda'
 import type { PinnedDeps, BatchStream } from 'vtex'
 import {
-  CommandError,
   Builder,
+  createFlowIssueError,
   createPathToFileObject,
   YarnFilesManager,
   fixPinnedDependencies,
@@ -13,11 +13,11 @@ import {
   ManifestEditor,
   getAppRoot,
   listenBuild,
-  runYarnIfPathExists,
   listLocalFiles,
   ProjectUploader,
   validateAppAction,
 } from 'vtex'
+import { runYarnIfPathExists } from 'vtex/lib/modules/utils'
 
 const root = getAppRoot()
 const buildersToRunLocalYarn = ['react', 'node']
@@ -146,7 +146,7 @@ export default async (options) => {
       }
 
       if (data.code === 'link_on_production') {
-        throw new CommandError(
+        throw createFlowIssueError(
           `Please use a dev workspace to test apps. Create one with (${chalk.blue(
             'vtex use <workspace> -rp'
           )}) to be able to test apps`

@@ -18,7 +18,7 @@ $ npm install -g @vtex/cli-plugin-test
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-@vtex/cli-plugin-test/1.0.2 linux-x64 node-v12.22.6
+@vtex/cli-plugin-test/1.0.3-beta.1 darwin-x64 node-v16.8.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -53,7 +53,7 @@ OPTIONS
   --trace              Ensure all requests to VTEX IO are traced
 ```
 
-_See code: [build/commands/test/e2e.ts](https://github.com/vtex/cli-plugin-test/blob/v1.0.2/build/commands/test/e2e.ts)_
+_See code: [build/commands/test/e2e.ts](https://github.com/vtex/cli-plugin-test/blob/v1.0.3-beta.1/build/commands/test/e2e.ts)_
 
 ## `oclif-example test:unit`
 
@@ -70,5 +70,5 @@ OPTIONS
   --trace        Ensure all requests to VTEX IO are traced
 ```
 
-_See code: [build/commands/test/unit.ts](https://github.com/vtex/cli-plugin-test/blob/v1.0.2/build/commands/test/unit.ts)_
+_See code: [build/commands/test/unit.ts](https://github.com/vtex/cli-plugin-test/blob/v1.0.3-beta.1/build/commands/test/unit.ts)_
 <!-- commandsstop -->
