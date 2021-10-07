@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2021-10-07
+
 ### Changed
 - Update CommandError to createFlowIssueError to conform to toolbelt 3.x.
 - Update runYarnIfPathExists import path.
