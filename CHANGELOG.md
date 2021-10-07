@@ -6,17 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.4-beta] - 2021-10-06
+### Changed
+- Update CommandError to createFlowIssueError to conform to toolbelt 3.x.
+- Update runYarnIfPathExists import path.
 
-## [1.0.3-beta] - 2021-09-24
-
-## [1.0.2] - 2021-09-22
-
-## [1.0.1] - 2021-09-21
-
-## [1.0.0] - 2021-07-12
 ### Fixed
 - Make dependencies explicit.
+- [lint] Use ban-ts-comment instead of ban-ts-ignore.
+- [lint] Remove disable for @typescript-eslint/camelcase.
 
 ### Changed
 - [ci] Automatic plugin documentation
