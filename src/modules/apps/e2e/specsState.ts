@@ -1,4 +1,4 @@
-import { SpecReport, AppReport, TestReport } from '../../../clients/Tester'
+import type { SpecReport, AppReport, TestReport } from '../../../clients/Tester'
 
 const COMPLETED_STATES = ['passed', 'failed', 'skipped', 'error']
 

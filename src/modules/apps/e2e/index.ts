@@ -10,9 +10,11 @@ import {
   publicEndpoint,
 } from 'vtex'
 
-import { parseReport, AppTest, passedApp } from './specsState'
+import type { AppTest } from './specsState'
+import { parseReport, passedApp } from './specsState'
 
-import { Tester, AppReport, TestRequest } from '../../../clients/Tester'
+import type { AppReport, TestRequest } from '../../../clients/Tester'
+import { Tester } from '../../../clients/Tester'
 
 const POLL_INTERVAL = 2000
 

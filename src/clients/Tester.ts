@@ -1,4 +1,5 @@
-import { AppClient, CacheType, InstanceOptions, IOContext } from '@vtex/api'
+import type { InstanceOptions, IOContext } from '@vtex/api'
+import { AppClient, CacheType } from '@vtex/api'
 import { IOClientFactory } from 'vtex'
 
 export interface SpecTestReport {
