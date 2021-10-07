@@ -9405,10 +9405,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vtex@3.8.0-beta:
-  version "3.8.0-beta"
-  resolved "https://registry.yarnpkg.com/vtex/-/vtex-3.8.0-beta.tgz#61f23564e00103cfc435b66ea42f0af2e6313de8"
-  integrity sha512-zewa0rximvrr2wXL1TWoxv53DDhWpc4csTSxXSKyZt8cY4CrQV2OMgTM5AaZUKmdKSia1vRiugykliW63AiO9Q==
+vtex@3.8.0-beta.1:
+  version "3.8.0-beta.1"
+  resolved "https://registry.yarnpkg.com/vtex/-/vtex-3.8.0-beta.1.tgz#acbf6b47727a576ffc6ae087bd08106ea444d7cf"
+  integrity sha512-ov6u4Uoa6agMBJa4lK/NApgPnIImIzHLfVsINMWx3C01lTqGQXjbGnsB/7np5RhtA/UuPUicXU/KtDKzGASTLw==
   dependencies:
     "@oclif/command" "^1.8.0"
     "@oclif/config" "^1.17.0"

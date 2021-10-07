@@ -1,7 +1,7 @@
 {
   "name": "@vtex/cli-plugin-test",
   "description": "vtex plugin test",
-  "version": "1.0.3-beta.1",
+  "version": "1.0.3-beta.2",
   "bugs": "https://github.com/vtex/cli-plugin-test/issues",
   "dependencies": {
     "@oclif/command": "^1",
@@ -31,7 +31,7 @@
     "ts-jest": "^25.2.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7",
-    "vtex": "3.8.0-beta"
+    "vtex": "3.8.0-beta.1"
   },
   "engines": {
     "node": ">=8.0.0"
