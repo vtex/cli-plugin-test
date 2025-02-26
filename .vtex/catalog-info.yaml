@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cli-plugin-test
+  description: Includes commands to run integration and unit tests for VTEX apps
+  tags:
+    - typescript
+    - oclif
+  annotations:
+    vtex.com/janus-acronym: ""
+    vtex.com/o11y-os-index: ""
+    grafana/dashboard-selector: ""
+    github.com/project-slug: vtex/cli-plugin-test
+    backstage.io/techdocs-ref: dir:../
+spec:
+  lifecycle: stable
+  owner: apps
+  type: cli-plugin
+  dependsOn: []
+  subcomponentOf: toolbelt
