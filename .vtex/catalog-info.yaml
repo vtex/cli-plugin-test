@@ -12,6 +12,7 @@ metadata:
     grafana/dashboard-selector: ""
     github.com/project-slug: vtex/cli-plugin-test
     backstage.io/techdocs-ref: dir:../
+    vtex.com/application-id: Y58GE1TE
 spec:
   lifecycle: stable
   owner: apps
