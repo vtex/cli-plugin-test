@@ -1,5 +1,5 @@
 - name: cli-plugin-test
-  referenceId: PLACEHOLDER
+  referenceId: Y58GE1TE
   build:
     provider: dkcicd
     pipelines:
